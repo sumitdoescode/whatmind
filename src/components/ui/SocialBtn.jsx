@@ -1,10 +1,10 @@
 import React from "react";
 
-const SocialBtn = ({ iconSrc, iconAlt, url, className }) => {
+const SocialBtn = ({ iconSrc, iconAlt, text, url, className }) => {
   return (
-    <a href="#" className={`bg-primary text-dark text-base font-medium rounded-full flex items-center gap-0 p-1 ${className}`}>
+    <a href={url} target="_blank" className={`bg-primary text-dark text-base font-medium rounded-full flex items-center gap-0 p-1 ${className}`}>
       <img src={iconSrc} alt={iconAlt} className="w-8" />
-      <p>{url}</p>
+      <p>{text}</p>
     </a>
   );
 };

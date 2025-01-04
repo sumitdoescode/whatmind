@@ -5,9 +5,9 @@ const Why = () => {
   return (
     <Section id="why">
       <SmallContainer>
-        <SectionHeading className="text-left">.why</SectionHeading>
+        <SectionHeading className="text-left">.why?</SectionHeading>
         <div className="mt-20">
-          <ContentHeading>Why I created this plateform</ContentHeading>
+          <ContentHeading>Why I created this plateform ?</ContentHeading>
           <Content className="mt-4">
             Through this journey of self-discovery, I found that understanding brought peace to my own struggles. It helped me overcome sorrow and confusion. Now, I want to extend that support to
             others.
