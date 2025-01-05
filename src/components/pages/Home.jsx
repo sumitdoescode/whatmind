@@ -43,7 +43,7 @@ const Home = () => {
               />
             </Content>
 
-            <a href="#contact" className="border-0 outline-none text-xl text-dark bg-primary font-medium inline-block no-underline py-2 px-4 rounded-md mt-6">
+            <a href="#contact" className="border-0 outline-none text-lg sm:text-xl lg:text-2xl text-dark bg-primary font-medium inline-block no-underline py-1 px-2 md:py-2 md:px-4 rounded-md mt-6">
               Ask here
             </a>
             {/* <BtnPrimary className="mt-4">Ask here</BtnPrimary> */}
