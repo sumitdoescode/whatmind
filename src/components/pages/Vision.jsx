@@ -6,7 +6,7 @@ const Vision = () => {
     <Section id="vision">
       <SmallContainer>
         <SectionHeading className="text-right">.vision</SectionHeading>
-        <div className="mt-20">
+        <div>
           <Content>My vision is to nurture a culture of skepticism in the human mind, enabling individuals to question the status quo and seek deeper understanding</Content>
 
           <Content className="content mt-8">

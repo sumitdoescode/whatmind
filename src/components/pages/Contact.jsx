@@ -3,10 +3,10 @@ import { Section, SmallContainer, SectionHeading, Input, Content, BtnPrimary } f
 
 const Contact = () => {
   return (
-    <Section id="contact">
+    <Section id="contact" isLast="true">
       <SmallContainer>
         <SectionHeading className="text-left">.contact</SectionHeading>
-        <div className="mt-20">
+        <div>
           <Content>feel free to reach out to me. Together, we can explore your struggles and work toward meaningful solutions.</Content>
 
           <form action={import.meta.env.VITE_FORM_URL} method={import.meta.env.VITE_FORM_URL_METHOD} className="flex flex-col gap-5 mt-8">
