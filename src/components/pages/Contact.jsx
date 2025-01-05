@@ -18,7 +18,7 @@ const Contact = () => {
               name="Message"
               id=""
               placeholder="Your Message"
-              className="border-0 outline-none py-2 px-4 text-xl text-white h-40 bg-[#1f1f1f] rounded-md inline-block placeholder:text-white"
+              className="border-0 outline-none py-2 px-4 text-lg sm:text-xl lg:text-2xl text-white h-40 bg-[#1f1f1f] rounded-md inline-block placeholder:text-white"
             ></textarea>
             <BtnPrimary type="submit" className="self-start">
               Send
