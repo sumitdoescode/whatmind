@@ -6,7 +6,7 @@ const About = () => {
     <Section id="about">
       <SmallContainer>
         <SectionHeading className="text-right">.about</SectionHeading>
-        <div className="mt-20">
+        <div>
           <ContentHeading>Who I Am</ContentHeading>
           <Content className="mt-4">I’m just a normal guy, deeply curious about human behavior and the world around us.</Content>
 

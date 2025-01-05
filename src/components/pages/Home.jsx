@@ -10,7 +10,7 @@ const Home = () => {
       <Container>
         <Navbar />
         <div className="flex items-center justify-center">
-          <div className="hero pt-40 pb-28 text-center max-w-3xl">
+          <div className="hero pt-20 pb-9 lg:pt-32 lg:pb-16 text-center max-w-3xl">
             <h1 className="text-white text-5xl font-semibold sm:text-6xl lg:text-7xl lg:font-bold">
               From <span className="text-primary">chaos</span> to <span className="text-primary">clarity.</span>
             </h1>

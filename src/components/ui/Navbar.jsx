@@ -56,7 +56,7 @@ const Navbar = ({ className }) => {
           className={`absolute z-10 inset-0 w-screen h-screen bg-black transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}
         `}
         >
-          <ul className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-3xl flex flex-col gap-10 items-center">
+          <ul className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl flex flex-col gap-10 items-center">
             {["home", "about", "why", "vision", "contact"].map((item, index) => (
               <li key={item} className={`hover:text-primary transition ease-in `}>
                 <a
