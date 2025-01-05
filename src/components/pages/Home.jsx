@@ -11,11 +11,11 @@ const Home = () => {
         <Navbar />
         <div className="flex items-center justify-center">
           <div className="hero pt-40 pb-28 text-center max-w-3xl">
-            <h1 className="text-white text-7xl">
+            <h1 className="text-white text-5xl font-semibold sm:text-6xl lg:text-7xl lg:font-bold">
               From <span className="text-primary">chaos</span> to <span className="text-primary">clarity.</span>
             </h1>
 
-            <Content className="mt-1">
+            <Content className="mt-1 relative">
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
@@ -47,7 +47,7 @@ const Home = () => {
               Ask here
             </a>
             {/* <BtnPrimary className="mt-4">Ask here</BtnPrimary> */}
-            <div className="flex items-center justify-center gap-5 mt-5">
+            <div className="flex flex-col items-center justify-center gap-5 mt-5 sm:flex-row sm:gap-10 ">
               <SocialBtn iconSrc="/icons/facebook.svg" iconAlt="facebook" text="/whatmind" url="https://www.facebook.com" />
               <SocialBtn iconSrc="/icons/instagram.svg" iconAlt="instagram" text="/whatmind" url="https://www.instagram.com" />
               <SocialBtn iconSrc="/icons/whatsapp.svg" iconAlt="whatsapp" text="/whatmind" url="https://www.whatsapp.com" />

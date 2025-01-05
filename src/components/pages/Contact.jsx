@@ -10,7 +10,7 @@ const Contact = () => {
           <Content>feel free to reach out to me. Together, we can explore your struggles and work toward meaningful solutions.</Content>
 
           <form action={import.meta.env.VITE_FORM_URL} method={import.meta.env.VITE_FORM_URL_METHOD} className="flex flex-col gap-5 mt-8">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col gap-4 md:flex-row">
               <Input type="text" placeholder="Your Name" name="Name" />
               <Input type="email" placeholder="Your Email" name="Email" />
             </div>
