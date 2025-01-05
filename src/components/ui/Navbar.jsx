@@ -23,12 +23,15 @@ const Navbar = ({ className }) => {
   }, [isOpen]);
 
   return (
-    <nav className={`${className} relative flex items-center justify-between px-2 py-1 md:px-10`}>
+    <nav className={`${className} relative flex items-center justify-between py-1`}>
+      {/* logo here */}
       <div className="logo z-20">
         <h1 className="text-primary text-2xl font-semibold sm:text-3xl md:text-4xl">whatmind</h1>
         <p className="text-white text-sm sm:text-base md:text-lg">The only place for getting heard</p>
       </div>
-      <button className="text-white md:hidden items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-white z-20 " onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+
+      {/* toggle button here */}
+      <button className="text-white lg:hidden items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-white z-20 " onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
         <svg className="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           {isOpen ? (
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -37,6 +40,17 @@ const Navbar = ({ className }) => {
           )}
         </svg>
       </button>
+
+      {/* Desktop Menu here */}
+      <ul className="hidden lg:flex space-x-8 text-white text-lg">
+        {["home", "about", "why", "vision", "contact"].map((item) => (
+          <li key={item} className="hover:text-primary transition">
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
+      </ul>
+
+      {/* Mobile Menu here */}
       {isOpen && (
         <div
           className={`absolute z-10 inset-0 w-screen h-screen bg-black transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}
