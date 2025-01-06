@@ -63,6 +63,7 @@ const Navbar = ({ className }) => {
                   href={`#${item}`}
                   onClick={() => {
                     setIsOpen(false);
+                    // close the mobile Navigation on click of NavItem
                   }}
                 >
                   {item}
