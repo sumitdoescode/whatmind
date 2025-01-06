@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Transition } from "@headlessui/react";
-import { nav } from "motion/react-client";
-// const navbarList = [
-//   { id: 1, text: "home", href: "#home" },
-//   { id: 2, text: "about", href: "#about" },
-//   { id: 3, text: "why", href: "#why" },
-//   { id: 4, text: "vision", href: "#vision" },
-//   { id: 5, text: "contact", href: "#contact" },
-// ];
 
-const Navbar = ({ className }) => {
+const navbarListItems = [
+  { id: 1, text: "home", href: "#home" },
+  { id: 2, text: "about", href: "#about" },
+  { id: 3, text: "why", href: "#why" },
+  { id: 4, text: "vision", href: "#vision" },
+  { id: 5, text: "contact", href: "#contact" },
+];
+
+const Navbar = ({ className = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -43,9 +42,9 @@ const Navbar = ({ className }) => {
 
       {/* Desktop Menu here */}
       <ul className="hidden lg:flex space-x-8 text-white text-lg">
-        {["home", "about", "why", "vision", "contact"].map((item) => (
-          <li key={item} className="hover:text-primary transition">
-            <a href={`#${item}`}>{item}</a>
+        {navbarListItems.map((item) => (
+          <li key={item.id} className="hover:text-primary transition">
+            <a href={item.href}>{item.text}</a>
           </li>
         ))}
       </ul>
@@ -57,16 +56,16 @@ const Navbar = ({ className }) => {
         `}
         >
           <ul className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl flex flex-col gap-10 items-center">
-            {["home", "about", "why", "vision", "contact"].map((item, index) => (
-              <li key={item} className={`hover:text-primary transition ease-in `}>
+            {navbarListItems.map((item) => (
+              <li key={item.id} className={`hover:text-primary transition ease-in `}>
                 <a
-                  href={`#${item}`}
+                  href={item.href}
                   onClick={() => {
                     setIsOpen(false);
                     // close the mobile Navigation on click of NavItem
                   }}
                 >
-                  {item}
+                  {item.text}
                 </a>
               </li>
             ))}

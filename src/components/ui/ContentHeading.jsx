@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContentHeading = ({ children, className }) => {
+const ContentHeading = ({ children, className = "" }) => {
   return <h2 className={`text-2xl sm:text-3xl text-white font-medium ${className}`}>{children}</h2>;
 };
 
