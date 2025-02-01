@@ -8,5 +8,7 @@ import Content from "./Content";
 import BtnPrimary from "./BtnPrimary";
 import SocialBtn from "./SocialBtn";
 import Input from "./Input";
+import TestimonialCard from "./TestimonialCard";
+import ContactForm from "./ContactForm";
 
-export { Section, SmallContainer, Container, Navbar, SectionHeading, ContentHeading, Content, BtnPrimary, SocialBtn, Input };
+export { Section, SmallContainer, Container, Navbar, SectionHeading, ContentHeading, Content, BtnPrimary, SocialBtn, Input, TestimonialCard, ContactForm };
