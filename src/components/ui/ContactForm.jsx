@@ -3,9 +3,7 @@ import { useForm } from "@formspree/react";
 import { Input, ContentHeading, BtnPrimary } from "./index";
 
 const ContactForm = ({ className = "" }) => {
-    console.log(import.meta.env.VITE_FORMSPREE_FORM_ID);
     const [state, handleSubmit, reset] = useForm(import.meta.env.VITE_FORMSPREE_FORM_ID);
-    console.log(state);
     if (state.succeeded) {
         return <ContentHeading className="mt-10">Thank you for reaching out to me!</ContentHeading>;
     }
