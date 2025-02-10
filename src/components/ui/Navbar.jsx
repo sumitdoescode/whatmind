@@ -72,7 +72,7 @@ const Navbar = ({ className = "" }) => {
                     <ul className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl flex flex-col gap-10 items-center">
                         {navbarListItems.map((item) => (
                             <li key={item.id} className={`hover:text-primary transition ease-in `}>
-                                <a
+                                {/* <a
                                     href={item.href}
                                     onClick={() => {
                                         setIsOpen(false);
@@ -80,7 +80,16 @@ const Navbar = ({ className = "" }) => {
                                     }}
                                 >
                                     {item.text}
-                                </a>
+                                </a> */}
+                                <NavLink
+                                    className={({ isActive }) => `${isActive ? "text-primary" : "text-white"}`}
+                                    to={item.route}
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                    }}
+                                >
+                                    {item.text}
+                                </NavLink>
                             </li>
                         ))}
                     </ul>
