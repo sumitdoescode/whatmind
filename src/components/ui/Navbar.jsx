@@ -37,7 +37,7 @@ const Navbar = ({ className = "" }) => {
             <Link to="/">
                 <div className="logo z-20">
                     <h1 className="text-primary text-2xl font-semibold sm:text-3xl md:text-4xl">whatmind</h1>
-                    <p className="text-white text-sm sm:text-base md:text-lg">The only place for getting heard</p>
+                    <p className="text-white text-sm sm:text-base md:text-lg">A place for chaotic mind</p>
                 </div>
             </Link>
 
